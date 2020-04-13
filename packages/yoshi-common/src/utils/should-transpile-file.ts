@@ -30,6 +30,12 @@ export default (fileName: string): boolean => {
     return filePath.includes('yoshi-flow-editor/.custom-entries');
   };
 
+  // Don't transpile the output of Carmi with Babel/TypeScript
+  // https://github.com/wix/yoshi/pull/2227
+  if (/\.carmi.(js|ts)$/.test(fileName)) {
+    return false;
+  }
+
   return (
     externalRegexList.some(regex => regex.test(fileName)) ||
     allSourcesButExternalModules(fileName) ||

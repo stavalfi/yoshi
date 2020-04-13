@@ -797,7 +797,6 @@ export function createBaseWebpackConfig({
         {
           test: /\.(ts|tsx)$/,
           include: shouldTranspileFile,
-          exclude: /\.carmi.ts$/,
           use: [
             {
               loader: 'thread-loader',
@@ -850,7 +849,6 @@ export function createBaseWebpackConfig({
         {
           test: reScript,
           include: shouldTranspileFile,
-          exclude: /\.carmi.js$/,
           use: [
             {
               loader: 'babel-loader',

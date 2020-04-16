@@ -25,6 +25,7 @@
     "test:others": "npm run mocha -- 'test/{webpack-config,config,lint}.spec.js' 'src/**/*.spec.js' 'test/tasks/**/*.spec.js'"
   },
   "dependencies": {
+    "is-ci":"^2.0.0",
     "@babel/code-frame": "7.8.3",
     "@babel/core": "7.8.7",
     "@types/graphql": "14.2.3",

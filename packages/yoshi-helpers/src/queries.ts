@@ -4,6 +4,7 @@ import globby from 'globby';
 import config from 'yoshi-config';
 import * as globs from 'yoshi-config/build/globs';
 import { POM_FILE } from 'yoshi-config/build/paths';
+import isCi from 'is-ci';
 import { defaultEntry } from './constants';
 
 export const exists = (
@@ -77,7 +78,7 @@ export const hasBundleInStaticsDir = (cwd = process.cwd()) => {
 
 export const shouldDeployToCDN = () => {
   return (
-    inTeamCity() &&
+    isCi &&
     (process.env.ARTIFACT_VERSION || process.env.SRC_MD5) &&
     fs.existsSync(POM_FILE)
   );

@@ -4,6 +4,7 @@ import fs from 'fs-extra';
 import tempy from 'tempy';
 // @ts-ignore wrong types
 import { setup as setupPuppeteer } from 'jest-environment-puppeteer';
+import isCi from 'is-ci';
 import {
   publishMonorepo,
   authenticateToRegistry,
@@ -16,9 +17,8 @@ export default async (globalConfig: any) => {
 
   await setupPuppeteer(globalConfig);
   const isPublish = !!process.env.WITH_PUBLISH;
-  const isCI = !!process.env.TEAMCITY_VERSION;
 
-  if (isPublish && !isCI && !process.env.forcePublish) {
+  if (isPublish && !isCi && !process.env.forcePublish) {
     console.log();
     console.log('------------------------------------');
     console.log();

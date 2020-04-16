@@ -3439,6 +3439,11 @@
   dependencies:
     "@types/webpack" "*"
 
+"@types/ci-info@*":
+  version "2.0.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@types/ci-info/-/ci-info-2.0.0.tgz#51848cc0f5c30c064f4b25f7f688bf35825b3971"
+  integrity sha1-UYSMwPXDDAZPSyX39oi/NYJbOXE=
+
 "@types/clean-css@*":
   version "4.2.1"
   resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@types/clean-css/-/clean-css-4.2.1.tgz#cb0134241ec5e6ede1b5344bc829668fd9871a8d"
@@ -3646,6 +3651,13 @@
   integrity sha1-58kuPb4+E6p5lED/QubToXqdBFs=
   dependencies:
     "@types/node" "*"
+
+"@types/is-ci@^2.0.0":
+  version "2.0.0"
+  resolved "https://repo.dev.wixpress.com/artifactory/api/npm/npm-repos/@types/is-ci/-/is-ci-2.0.0.tgz#e2b81d0f9275861649d501dbc39a480fbf311459"
+  integrity sha1-4rgdD5J1hhZJ1QHbw5pID78xFFk=
+  dependencies:
+    "@types/ci-info" "*"
 
 "@types/is-function@^1.0.0":
   version "1.0.0"

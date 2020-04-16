@@ -8,9 +8,9 @@
   "author": "Ran Yitzhaki",
   "license": "ISC",
   "dependencies": {
-    "@stylable/jest": "3.4.0",
-    "@stylable/module-utils": "3.4.0",
-    "@stylable/node": "3.4.0",
-    "@stylable/webpack-plugin": "3.4.0"
+    "@stylable/jest": "3.4.1",
+    "@stylable/module-utils": "3.4.1",
+    "@stylable/node": "3.4.1",
+    "@stylable/webpack-plugin": "3.4.1"
   }
 }

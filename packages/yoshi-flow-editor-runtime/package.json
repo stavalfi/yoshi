@@ -12,9 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "@wix/native-components-infra": "^1.0.668",
-    "@wix/platform-editor-sdk": "0.0.865",
+    "@wix/platform-editor-sdk": "0.0.879",
     "@wix/wix-base-ui": "^3.0.0",
-    "@wix/wix-experiments": "3.0.441",
+    "@wix/wix-experiments": "3.0.442",
     "prop-types": "^15.7.2",
     "tpa-style-webpack-plugin": "^1.3.13"
   },

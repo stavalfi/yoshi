@@ -9,16 +9,16 @@
   "dependencies": {
     "@sentry/browser": "5.7.1",
     "@types/react": "16.9.32",
-    "@wix/business-manager-api": "1.0.994",
-    "@wix/fedops-logger": "5.9.1",
-    "@wix/wix-axios-config": "2.0.2259",
-    "@wix/wix-experiments": "3.0.441",
-    "@wix/wix-experiments-react": "3.0.525",
+    "@wix/business-manager-api": "1.0.1007",
+    "@wix/fedops-logger": "5.9.5",
+    "@wix/wix-axios-config": "2.0.2263",
+    "@wix/wix-experiments": "3.0.442",
+    "@wix/wix-experiments-react": "3.0.535",
     "axios": "0.19.2",
     "i18next": "8.4.3",
     "react": "16.13.1",
     "react-i18next": "4.8.0",
-    "react-module-container": "1.0.2214"
+    "react-module-container": "1.0.2225"
   },
   "devDependencies": {
     "@types/history": "4.7.5"

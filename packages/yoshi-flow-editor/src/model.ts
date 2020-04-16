@@ -1,6 +1,6 @@
 import path from 'path';
 import globby from 'globby';
-import { getProjectArtifactId } from 'yoshi-helpers/utils';
+import { getProjectArtifactId } from 'yoshi-helpers/build/utils';
 import { isTypescriptProject } from 'yoshi-helpers/build/queries';
 import resolve from 'resolve';
 import fs from 'fs-extra';

@@ -47,3 +47,5 @@ Yoshi is actively and openly being developed on GitHub. Contributions of any kin
 See our [contributing guide](https://github.com/wix/yoshi/blob/master/CONTRIBUTING.md) to understand our development process before your first contribution.
 
 A good way to start is by looking at issues tagged with [Good First Issue](https://github.com/wix/yoshi/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%91%B6+Good+first+issue%22+). Please comment on the issue you'd like to work on and we'll be happy to give you some guidance 🙏.
+
+lalalaal

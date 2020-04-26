@@ -107,10 +107,13 @@ describe('Aggregator: e2e', () => {
     it('should run protractor with mocha', () => {
       const res = test
         .setup(singleModuleWithMocha())
-        .execute('test', ['--protractor'], insideTeamCity);
+        .execute('test', ['--protractor'], {
+          ...insideTeamCity,
+          CHROMEDRIVER_VERSION: '2.35',
+        });
 
       expect(res.code).to.equal(0);
-      expect(res.stdout).to.contain('1 passing (');
+      expect(res.stdout).to.contain('chrome #01 passed');
     });
 
     it('should run protractor with mocha and use TeamCity reporter', () => {
@@ -198,11 +201,12 @@ describe('Aggregator: e2e', () => {
       .setup(singleModuleWithCustomMochaProtractorConfig())
       .execute('test', ['--protractor'], {
         ...insideTeamCity,
+        CHROMEDRIVER_VERSION: '2.35',
         YOSHI_PROTRACTOR_CONFIG: 'protractor1.conf.js',
       });
 
     expect(res.code).to.equal(0);
-    expect(res.stdout).to.contain('1 passing (');
+    expect(res.stdout).to.contain('chrome #01 passed');
   });
 
   it("should extend project's afterLaunch", function() {
